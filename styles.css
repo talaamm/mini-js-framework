@@ -28,8 +28,8 @@ body {
         Arial,
         sans-serif;
     line-height: 1.4em;
-    background: #000; /* Black Theme Background */
-    color: #e0e0e0; /* Light Gray Text Color */
+    background: #000;
+    color: #e0e0e0;
     min-width: 230px;
     max-width: 550px;
     margin: 0 auto;
@@ -39,30 +39,30 @@ body {
 }
 
 .todoapp {
-    background: #1a1a1a; /* Darker Background for Todo App */
+    background: #1a1a1a;
     margin: 130px 0 40px 0;
     position: relative;
     box-shadow:
         0 2px 4px 0 rgba(255, 255, 255, 0.1),
-        0 25px 50px 0 rgba(255, 255, 255, 0.05); /* Adjusted Box Shadow */
+        0 25px 50px 0 rgba(255, 255, 255, 0.05);
 }
 
 .todoapp input::-webkit-input-placeholder {
     font-style: italic;
     font-weight: 400;
-    color: rgba(200, 200, 200, 0.4); /* Light Gray Placeholder */
+    color: rgba(200, 200, 200, 0.4);
 }
 
 .todoapp input::-moz-placeholder {
     font-style: italic;
     font-weight: 400;
-    color: rgba(200, 200, 200, 0.4); /* Light Gray Placeholder */
+    color: rgba(200, 200, 200, 0.4);
 }
 
 .todoapp input::input-placeholder {
     font-style: italic;
     font-weight: 400;
-    color: rgba(200, 200, 200, 0.4); /* Light Gray Placeholder */
+    color: rgba(200, 200, 200, 0.4);
 }
 
 .todoapp h1 {
@@ -72,7 +72,7 @@ body {
     font-size: 80px;
     font-weight: 200;
     text-align: center;
-    color: #d15f65; /* Adjusted Color for Heading */
+    color: #d15f65;
     -webkit-text-rendering: optimizeLegibility;
     -moz-text-rendering: optimizeLegibility;
     text-rendering: optimizeLegibility;
@@ -89,8 +89,8 @@ body {
     line-height: 1.4em;
     color: inherit;
     padding: 6px;
-    border: 1px solid #444; /* Darker Border */
-    box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.4); /* Adjusted Box Shadow */
+    border: 1px solid #444;
+    box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -100,21 +100,21 @@ body {
     padding: 16px 16px 16px 60px;
     height: 65px;
     border: none;
-    background: rgba(0, 0, 0, 0.2); /* Darker Background for New Todo */
-    box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.3); /* Adjusted Box Shadow */
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.3);
 }
 
 .main {
     position: relative;
     z-index: 2;
-    border-top: 1px solid #333; /* Darker Border */
+    border-top: 1px solid #333;
 }
 
 .toggle-all {
     width: 1px;
     height: 1px;
     border: none;
-    /* Mobile Safari */
+
     opacity: 0;
     position: absolute;
     right: 100%;
@@ -137,14 +137,14 @@ body {
     content: "❯";
     display: inline-block;
     font-size: 22px;
-    color: #777; /* Darker Gray Color */
+    color: #777;
     padding: 10px 27px 10px 27px;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
 .toggle-all:checked + label:before {
-    color: #bbb; /* Lighter Gray Color */
+    color: #bbb;
 }
 
 .footer:before {
@@ -160,7 +160,7 @@ body {
         0 8px 0 -3px #1a1a1a,
         0 9px 1px -3px rgba(255, 255, 255, 0.1),
         0 16px 0 -6px #1a1a1a,
-        0 17px 2px -6px rgba(255, 255, 255, 0.1); /* Adjusted Box Shadow */
+        0 17px 2px -6px rgba(255, 255, 255, 0.1);
 }
 
 .todo-count {
@@ -238,7 +238,7 @@ body {
 .speech-bubble {
     position: relative;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.04); /* Adjusted Background */
+    background: rgba(255, 255, 255, 0.04);
     border-radius: 5px;
 }
 
@@ -248,7 +248,7 @@ body {
     top: 100%;
     right: 30px;
     border: 13px solid transparent;
-    border-top-color: rgba(255, 255, 255, 0.04); /* Adjusted Border Color */
+    border-top-color: rgba(255, 255, 255, 0.04);
 }
 
 .learn-bar > .learn {
@@ -258,10 +258,10 @@ body {
     left: -300px;
     padding: 10px;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.6); /* Darker Background for Learn Bar */
+    background-color: rgba(0, 0, 0, 0.6);
     transition-property: left;
     transition-duration: 500ms;
-    color: #e0e0e0; /* light text in learn bar */
+    color: #e0e0e0;
 }
 
 @media (min-width: 899px) {
@@ -283,15 +283,11 @@ body {
 .todo-list li {
     position: relative;
     font-size: 24px;
-    border-bottom: 1px solid #333; /* Darker Border */
+    border-bottom: 1px solid #333;
 }
 
 .todo-list li .toggle + label {
-    /*
-        Firefox requires `#` to be escaped - https://bugzilla.mozilla.org/show_bug.cgi?id=922433
-        IE and Edge requires *everything* to be escaped to render, so we do that instead of just the `#` - https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/7157459/
-    */
-    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23777%22%20stroke-width%3D%223%22/%3E%3C/svg%3E"); /* Darker Gray Stroke */
+    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23777%22%20stroke-width%3D%223%22/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center left;
 }
@@ -311,9 +307,9 @@ html .clear-completed:active {
 
 .info {
     margin: 65px auto 0;
-    color: #999; /* Darker Gray Color */
+    color: #999;
     font-size: 11px;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); /* Adjusted Text Shadow */
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
@@ -330,11 +326,6 @@ html .clear-completed:active {
 .info a:hover {
     text-decoration: underline;
 }
-
-/*
-    Hack to remove background from Mobile Safari.
-    Can't use it globally since it destroys checkboxes in Firefox
-*/
 
 @media (min-width: 899px) {
     .learn-bar {
@@ -373,11 +364,11 @@ html .clear-completed:active {
     line-height: 1.2;
     transition: color 0.4s;
     font-weight: 400;
-    color: #bbb; /* Lighter Gray Text */
+    color: #bbb;
 }
 
 .todo-list li.completed label {
-    color: #777; /* Darker Gray Color */
+    color: #777;
     text-decoration: line-through;
 }
 
@@ -391,13 +382,13 @@ html .clear-completed:active {
     height: 40px;
     margin: auto 0;
     font-size: 30px;
-    color: #777; /* Darker Gray Color */
+    color: #777;
     transition: color 0.2s ease-out;
 }
 
 .todo-list li .destroy:hover,
 .todo-list li .destroy:focus {
-    color: #d18585; /* Adjusted Hover Color */
+    color: #d18585;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -447,14 +438,12 @@ html .clear-completed:active {
 .todo-list li .toggle {
     text-align: center;
     width: 40px;
-    /* auto, since non-WebKit browsers doesn't support input styling */
     height: auto;
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto 0;
     border: none;
-    /* Mobile Safari */
     -webkit-appearance: none;
     appearance: none;
 }
@@ -487,20 +476,20 @@ html .clear-completed:active {
     height: 20px;
     text-align: center;
     font-size: 15px;
-    border-top: 1px solid #333; /* Darker Border */
+    border-top: 1px solid #333;
 }
 
 hr {
     margin: 20px 0;
     border: 0;
-    border-top: 1px dashed #444; /* Darker Dashed Line */
-    border-bottom: 1px dashed #222; /* Darker Dashed Line */
+    border-top: 1px dashed #444;
+    border-bottom: 1px dashed #222;
 }
 
 .learn a {
     font-weight: normal;
     text-decoration: none;
-    color: #d15f65; /* Adjusted Color */
+    color: #d15f65;
 }
 
 .learn a:hover {
@@ -514,7 +503,7 @@ hr {
     margin: 10px 0;
     font-weight: 500;
     line-height: 1.2;
-    color: #ddd; /* Lighter Text Color */
+    color: #ddd;
 }
 
 .learn h3 {
@@ -573,14 +562,12 @@ hr {
 .todo-list li .toggle {
     text-align: center;
     width: 40px;
-    /* auto, since non-WebKit browsers doesn't support input styling */
     height: auto;
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto 0;
     border: none;
-    /* Mobile Safari */
     -webkit-appearance: none;
     appearance: none;
 }
@@ -590,10 +577,6 @@ hr {
 }
 
 .todo-list li .toggle + label {
-    /*
-        Firefox requires `#` to be escaped - https://bugzilla.mozilla.org/show_bug.cgi?id=922433
-        IE and Edge requires *everything* to be escaped to render, so we do that instead of just the `#` - https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/7157459/
-    */
     background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23949494%22%20stroke-width%3D%223%22/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center left;
