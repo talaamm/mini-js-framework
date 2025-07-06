@@ -1,4 +1,4 @@
 export default {
-    base: "/",
-  };
+    base: process.env.NODE_ENV === 'production' ? "/mini-js-framework/" : "/",
+};
   
