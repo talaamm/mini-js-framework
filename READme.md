@@ -11,6 +11,8 @@ npm run dev
 
 then go to <http://localhost:5173/> and enjoy!
 
+Live Demo: https://talaamm.github.io/mini-js-framework/
+
 ---
 
 ## Overview
